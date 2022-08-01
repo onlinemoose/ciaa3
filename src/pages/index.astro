@@ -1,29 +1,9 @@
 ---
-import BaseHead from "../components/BaseHead.astro"
-import Nav from "../components/Nav.astro"
-import HomepageMain from "../components/HomepageMain.astro"
-import HomepageAlert from "../components/HomepageAlert.astro"
-import Footer from "../components/FooterGeneral.astro"
-
-// To Do - fetch warning message from Hygraph and check for its presence
-let missing = false;
-
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
-let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+import Layout from '../layouts/Layout.astro';
+import HomepageMain from '../components/HomepageMain.astro';
 ---
+<Layout>
+  
+	<HomepageMain />
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} keywords={keywords} />
-	</head>
-		
-	<body>
-		{ missing ? <HomepageAlert /> : null }
-		<Nav />
-		<HomepageMain />
-		<Footer />
-	</body>
-
-</html>
+</Layout>
