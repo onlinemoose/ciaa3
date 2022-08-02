@@ -1,0 +1,45 @@
+---
+export async function getStaticPaths() {
+  const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
+    {
+      method:'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        query: `
+
+          query getPosts {
+              posts {
+                  id
+                  title
+                  content {
+                  html
+                  }
+              }
+          }
+
+          `,
+      }),
+    })
+
+  const json = await response.json();
+  const homecontent = json.data;
+
+  return homecontent.posts.map((post) => {
+    return {
+      params: { id: post.id },
+      props: { post }
+    };
+  });
+}
+console.log(Astro.props)
+
+const { id } = Astro.params;
+const { post } = Astro.props;
+
+---
+<body>
+  <h2>{id}</h2>
+  <p>{post.title}</p>
+</body>
+
+
