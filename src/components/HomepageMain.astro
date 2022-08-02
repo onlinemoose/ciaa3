@@ -23,6 +23,7 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
                             html
                         }
                         featureImageAltText
+                        keepImgLeft
                     }
                 }
             }
@@ -50,6 +51,7 @@ const features = homecontent.home.homepageFeatures;
             htmlcontent={feature.content.html}
             url={feature.featureImage.url}
             imgalt={feature.featureImageAltText}
+            keepleft={feature.keepImgLeft}
         />
     )}
 </main>

@@ -7,27 +7,40 @@ export interface Props {
   htmlcontent: string;
   url: string;
   imgalt: string;
+  keepleft: boolean;
 }
 
-const { title, subtitle, htmlcontent, url, imgalt } = Astro.props as Props;
+const { title, subtitle, htmlcontent, url, imgalt, keepleft } = Astro.props as Props;
 
-const cleanContent = parse(htmlcontent)
-
+const cleanContent = parse(htmlcontent);
 ---
 
 <div class="section">
     <div class="container content">
-        <div class="columns reverse-columns">
-            <div class="column">
-                <div class="box">
-                    <img src={url} alt={imgalt}>
+        <div class="columns">
+            {keepleft ? 
+                <div class="column">
+                    <div class="box">
+                        <img src={url} alt={imgalt}>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <h2 class="title">{title}</h2>
-                <h3 class="subtitle is-6">{subtitle}</h3>
-                {cleanContent}
-            </div>
+                <div class="column">
+                    <h2 class="title">{title}</h2>
+                    <h3 class="subtitle is-6">{subtitle}</h3>
+                    {cleanContent}
+                </div>
+                : 
+                <div class="column">
+                    <h2 class="title">{title}</h2>
+                    <h3 class="subtitle is-6">{subtitle}</h3>
+                    {cleanContent}
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <img src={url} alt={imgalt}>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
@@ -35,7 +48,7 @@ const cleanContent = parse(htmlcontent)
 <style>
 
     @media(max-width: 767px) { 
-        .reverse-columns {
+        .reverse-columns-on-standard {
             flex-direction: column-reverse;
             display: flex;
         }
