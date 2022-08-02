@@ -1,4 +1,7 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+import parse from 'node-html-parser';
+
 export async function getStaticPaths() {
   const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
     {
@@ -12,7 +15,7 @@ export async function getStaticPaths() {
                   id
                   title
                   content {
-                  html
+                    html
                   }
               }
           }
@@ -25,8 +28,11 @@ export async function getStaticPaths() {
   const homecontent = json.data;
 
   return homecontent.posts.map((post) => {
+
+    let cleanId = post.title.replace(/\s+/g, '-').toLowerCase();
+
     return {
-      params: { id: post.id },
+      params: { id: cleanId },
       props: { post }
     };
   });
@@ -36,10 +42,14 @@ console.log(Astro.props)
 const { id } = Astro.params;
 const { post } = Astro.props;
 
+const cleanContent = parse(post.content.html);
+
 ---
-<body>
-  <h2>{id}</h2>
-  <p>{post.title}</p>
-</body>
+<Layout>
+  <div class="section content">
+    <h2>{post.title}</h2>
+    <p>{cleanContent}</p>
+  </div>
+</Layout>
 
 
