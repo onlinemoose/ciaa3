@@ -1,0 +1,33 @@
+---
+const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
+  {
+    method:'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      query: `
+
+        query getHomeSecondaryContent {
+            home(where: {id: "cl6ca77rodjh30bmim02bvi13"}) {
+                secondaryHeading
+                secondaryContent {
+                    html
+                }
+            }
+        }
+
+        `,
+    }),
+  })
+
+const json = await response.json();
+const homecontent = json.data;
+---
+
+<div class="section">
+    <div class="container content">
+            <div class="">
+                <h2>{homecontent.home.secondaryHeading}</h2>
+            </div>
+            {homecontent.home.secondaryContent.html}
+    </div>
+</div>

@@ -1,6 +1,6 @@
 ---
-import showdown from 'showdown';
-import parse from 'node-html-parser';
+import Hero from './homepage/Hero.astro';
+import SecondaryContent from './homepage/SecondaryContent.astro';
 
 const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
   {
@@ -8,26 +8,14 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({
       query: `
-        query MyQuery {
-            home(where: {
-                id: "cl69i10z106vi0el983wtfjo0" }) {
-                    secondaryHeading
-                    primaryHeading
-                    subHeading
-                    secondaryContent
-                    homeFeature {
-                        title
-                        subtitle
-                        content {
-                            html
-                        }
-                        featureImage {
-                            url
-                        }
-                        featureImageAltText
-                    }
-                }
+
+        query getHomeHeroContent {
+            home(where: {id: "cl6ca77rodjh30bmim02bvi13"}) {
+                primaryHeading
+                subHeading
+            }
         }
+
         `,
     }),
   })
@@ -35,49 +23,13 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
 const json = await response.json();
 const homecontent = json.data;
 
-function getCleanHtml(htmlText) {
-    const converter = new showdown.Converter()
-    let t = converter.makeHtml(htmlText)
-    let h = parse(t)
-    return h;
-}
-
-const secondaryContent = getCleanHtml(homecontent.home.secondaryContent);
-const homeFeature = getCleanHtml(homecontent.home.homeFeature.content.html);
-
 ---
 
 <main>
-    <div class="hero is-medium is-primary has-background">
-        <img alt="Small tree on calm water" class="hero-background is-transparent" src="images/zen-taichi-tree.jpg">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-8-desktop is-offset-2-desktop">
-                        <h1 class="title is-2 is-spaced">
-                            {homecontent.home.primaryHeading}
-                        </h1>
-                        <h2 class="subtitle is-4">
-                            {homecontent.home.subHeading}
-                        </h2>
-                        <a href="/internal-arts">
-                            <button class="button is-primary is-outlined is-inverted is-hovered is-pulled-right">Discover More</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="section">
-        <div class="container content">
-                <div class="">
-                    <h2>{homecontent.home.secondaryHeading}</h2>
-                </div>
-                {secondaryContent}
-        </div>
-    </div>
-
+    <Hero />
+    <SecondaryContent />
+<!--
     <div class="section">
         <div class="container content">
             <div class="columns reverse-columns">
@@ -94,28 +46,11 @@ const homeFeature = getCleanHtml(homecontent.home.homeFeature.content.html);
             </div>
         </div>
     </div>
-
+ -->    
 </main>
 
 
 <style>
-
-    .hero.has-background {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .hero-background {
-        position: absolute;
-        object-fit: cover;
-        object-position: center center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .hero-background.is-transparent {
-        opacity: 0.5;
-    }
 
     @media(max-width: 767px) { 
         .reverse-columns {
