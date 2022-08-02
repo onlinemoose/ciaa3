@@ -1,4 +1,5 @@
 ---
+import FeatureContent from './homepage/FeatureContent.astro';
 import Hero from './homepage/Hero.astro';
 import SecondaryContent from './homepage/SecondaryContent.astro';
 
@@ -9,12 +10,24 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
     body: JSON.stringify({
       query: `
 
-        query getHomeHeroContent {
+        query getHomeSecondaryContent {
             home(where: {id: "cl6ca77rodjh30bmim02bvi13"}) {
-                primaryHeading
-                subHeading
+                homepageFeatures {
+                    ... on FeatureComponent {
+                        title
+                        subtitle
+                        featureImage {
+                            url
+                        }
+                        content {
+                            html
+                        }
+                        featureImageAltText
+                    }
+                }
             }
         }
+
 
         `,
     }),
@@ -22,6 +35,7 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
 
 const json = await response.json();
 const homecontent = json.data;
+const features = homecontent.home.homepageFeatures;
 
 ---
 
@@ -29,34 +43,13 @@ const homecontent = json.data;
 
     <Hero />
     <SecondaryContent />
-<!--
-    <div class="section">
-        <div class="container content">
-            <div class="columns reverse-columns">
-                <div class="column">
-                    <div class="box">
-                        <img src={homecontent.home.homeFeature.featureImage.url} alt="">
-                    </div>
-                </div>
-                <div class="column">
-                    <h2 class="title">{homecontent.home.homeFeature.title}</h2>
-                    <h3 class="subtitle is-6">{homecontent.home.homeFeature.subtitle}</h3>
-                    {homeFeature}
-                </div>
-            </div>
-        </div>
-    </div>
- -->    
+    {features.map(feature => 
+        <FeatureContent
+            title={feature.title}
+            subtitle={feature.subtitle}
+            htmlcontent={feature.content.html}
+            url={feature.featureImage.url}
+            imgalt={feature.featureImageAltText}
+        />
+    )}
 </main>
-
-
-<style>
-
-    @media(max-width: 767px) { 
-        .reverse-columns {
-            flex-direction: column-reverse;
-            display: flex;
-        }
-    }
-
-</style>
