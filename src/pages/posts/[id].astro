@@ -1,4 +1,5 @@
 ---
+import Header from '../../components/Header.astro';
 import Layout from '../../layouts/Layout.astro';
 import parse from 'node-html-parser';
 
@@ -44,9 +45,16 @@ const { post } = Astro.props;
 
 const cleanContent = parse(post.content.html);
 
+let title = "Chinese Internal Arts Association of Great Britain";
+let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+
 ---
 <Layout>
-  <div class="section content">
+
+  <Header slot="header-content" title={title} description={description} keywords={keywords}/>
+
+  <div slot="main-content" class="section content">
     <h2>{post.title}</h2>
     <p>{cleanContent}</p>
   </div>

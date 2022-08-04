@@ -1,9 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+let title = "Chinese Internal Arts Association of Great Britain";
+let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
 ---
 <Layout>
+
+        <Header slot="header-content" title={title} description={description} keywords={keywords}/>
         
-        <div class="hero is-medium is-primary has-background">
+        <div slot="main-content" class="hero is-medium is-primary has-background">
             <img alt="Small tree on calm water" class="hero-background is-transparent" src="/images/zen-taichi-tree.jpg">
             <div class="hero-body">
                 <div class="container">

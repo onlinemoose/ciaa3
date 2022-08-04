@@ -1,26 +1,23 @@
 ---
-import Header from "../components/Header.astro"
 import Nav from "../components/Nav.astro"
 import HomepageAlert from "../components/HomepageAlert.astro"
 import Footer from "../components/FooterGeneral.astro"
 
 // To Do - fetch warning message from Hygraph and check for its presence
 let missing = false;
-
-// https://aalam.in/blog/astro-and-dynamic-pages
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 
 	<head>
-		<Header />
+		<slot name="header-content" />
 	</head>
 		
 	<body>
 		{ missing ? <HomepageAlert /> : null }
 		<Nav />
-			<slot />
+			<slot name="main-content" />
 		<Footer />
 	</body>
 
