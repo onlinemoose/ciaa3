@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+$size-1: 4rem;
+$size-2: 3rem;
+$size-3: 2.5rem;
+$size-4: 1.75rem;
+$size-5: 1.5rem;
+$size-6: 1.25rem;
+
+h1, h2:not(.subtitle), h3:not(.subtitle) { 
+    font-family: "Crimson Pro", serif; 
+    letter-spacing: -.03rem;
+}
+
+h1 {
+    @extend.is-1;
+  }
+  
+  h2 {
+    @extend.is-2;
+  }
+  
+  h3 {
+    @extend.is-3;
+  }
+  
+  h4 {
+    @extend.is-4;
+  }
+  
+  h5 {
+    @extend.is-5;
+  }
+  
+  h6 {
+    @extend.is-6;
+  }
+
+nav, a, .subtitle {
+    font-family: "Inter", sans-serif;
+}
+
+p, blockquote {
+    font-size: $size-6;
+}
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #e26b7f;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import "../node_modules/bulma/bulma.sass";

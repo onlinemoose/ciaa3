@@ -1,6 +1,7 @@
 ---
 import FeatureContent from './homepage/FeatureContent.astro';
 import Hero from './homepage/Hero.astro';
+import PromoteAssociations from './homepage/PromoteAssociations.astro';
 import SecondaryContent from './homepage/SecondaryContent.astro';
 
 const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
@@ -43,6 +44,7 @@ const features = homecontent.home.homepageFeatures;
 <main>
 
     <Hero />
+    <PromoteAssociations />
     <SecondaryContent />
     {features.map(feature => 
         <FeatureContent

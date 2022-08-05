@@ -1,7 +1,8 @@
 ---
-import 'bulma/css/bulma.css';
-import "@fontsource/crimson-pro/200.css";
-import "@fontsource/inter/600.css";
+import '../../mybulma/css/mystyles.css';
+import "@fontsource/crimson-pro/300.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/700.css";
 
 export interface Props {
 	title: string;
@@ -22,15 +23,3 @@ const { title, description, keywords } = Astro.props;
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
 
-	<style is:global>
-
-	body {
-		font-family: "Inter", sans-serif;
-	}
-
-	h1, h2:not(.subtitle) { 
-		font-family: "Crimson Pro", serif; 
-		color: rgb(4, 83, 57);
-	}
-
-	</style>
