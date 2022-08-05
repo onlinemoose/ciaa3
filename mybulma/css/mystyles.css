@@ -1,12 +1,18 @@
-h1, h2:not(.subtitle), h3:not(.subtitle) {
+nav, h1, h2:not(.subtitle), h3:not(.subtitle), h4, h5, h6 {
   font-family: "Crimson Pro", serif;
   letter-spacing: -.03rem; }
 
-nav, a, .subtitle {
+a, p, .subtitle {
   font-family: "Inter", sans-serif; }
 
-p, blockquote {
-  font-size: 1.25rem; }
+blockquote {
+  font-size: 1.1rem;
+  font-weight: 500; }
+
+p {
+  font-size: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.01rem; }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -22,7 +28,7 @@ p, blockquote {
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
@@ -1227,7 +1233,7 @@ a.box:active {
     .button.is-small:not(.is-rounded) {
       border-radius: 2px; }
   .button.is-normal {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .button.is-medium {
     font-size: 1.5rem; }
   .button.is-large {
@@ -1319,7 +1325,7 @@ a.box:active {
   .button.is-responsive.is-medium {
     font-size: 0.75rem; }
   .button.is-responsive.is-large {
-    font-size: 1.25rem; } }
+    font-size: 1.1rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .button.is-responsive.is-small {
@@ -1328,7 +1334,7 @@ a.box:active {
   .button.is-responsive.is-normal {
     font-size: 0.75rem; }
   .button.is-responsive.is-medium {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .button.is-responsive.is-large {
     font-size: 1.5rem; } }
 
@@ -1486,7 +1492,7 @@ a.box:active {
   font-size: 0.75rem; }
 
 .content.is-normal {
-  font-size: 1.25rem; }
+  font-size: 1.1rem; }
 
 .content.is-medium {
   font-size: 1.5rem; }
@@ -1688,7 +1694,7 @@ div.icon-text {
   border: none;
   border-radius: 9999px;
   display: block;
-  height: 1.25rem;
+  height: 1.1rem;
   overflow: hidden;
   padding: 0;
   width: 100%; }
@@ -1956,7 +1962,7 @@ div.icon-text {
   .tags:not(:last-child) {
     margin-bottom: 1rem; }
   .tags.are-medium .tag:not(.is-normal):not(.is-large) {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium) {
     font-size: 1.5rem; }
   .tags.is-centered {
@@ -2047,7 +2053,7 @@ div.icon-text {
   .tag:not(body).is-normal {
     font-size: 0.75rem; }
   .tag:not(body).is-medium {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .tag:not(body).is-large {
     font-size: 1.5rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
@@ -2128,7 +2134,7 @@ a.tag:hover {
   .title.is-5, h5.title {
     font-size: 1.5rem; }
   .title.is-6, h6.title {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .title.is-7 {
     font-size: 0.75rem; }
 
@@ -2153,7 +2159,7 @@ a.tag:hover {
   .subtitle.is-5, h5.subtitle {
     font-size: 1.5rem; }
   .subtitle.is-6, h6.subtitle {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .subtitle.is-7 {
     font-size: 0.75rem; }
 
@@ -2646,7 +2652,7 @@ a.tag:hover {
   .file.is-small {
     font-size: 0.75rem; }
   .file.is-normal {
-    font-size: 1.25rem; }
+    font-size: 1.1rem; }
   .file.is-medium {
     font-size: 1.5rem; }
     .file.is-medium .file-icon .fa {
@@ -2768,7 +2774,7 @@ a.tag:hover {
 .label {
   color: #363636;
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700; }
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
@@ -2938,7 +2944,7 @@ a.tag:hover {
 .control {
   box-sizing: border-box;
   clear: both;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   position: relative;
   text-align: inherit; }
   .control.has-icons-left .input:focus ~ .icon,
@@ -2989,7 +2995,7 @@ a.tag:hover {
 
 /* Bulma Components */
 .breadcrumb {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   white-space: nowrap; }
   .breadcrumb a {
     align-items: center;
@@ -3304,7 +3310,7 @@ button.dropdown-item {
     overflow-x: auto; } }
 
 .menu {
-  font-size: 1.25rem; }
+  font-size: 1.1rem; }
   .menu.is-small {
     font-size: 0.75rem; }
   .menu.is-medium {
@@ -3343,7 +3349,7 @@ button.dropdown-item {
 .message {
   background-color: whitesmoke;
   border-radius: 4px;
-  font-size: 1.25rem; }
+  font-size: 1.1rem; }
   .message strong {
     color: currentColor; }
   .message a:not(.button):not(.tag):not(.dropdown-item) {
@@ -4340,7 +4346,7 @@ a.navbar-item,
   min-height: calc(100vh - 3.25rem); }
 
 .pagination {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin: -0.25rem; }
   .pagination.is-small {
     font-size: 0.75rem; }
@@ -4473,7 +4479,7 @@ a.navbar-item,
 .panel {
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  font-size: 1.25rem; }
+  font-size: 1.1rem; }
   .panel:not(:last-child) {
     margin-bottom: 1.5rem; }
   .panel.is-white .panel-heading {
@@ -4626,7 +4632,7 @@ label.panel-block {
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
@@ -6412,7 +6418,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-size: 1.5rem !important; }
 
 .is-size-6 {
-  font-size: 1.25rem !important; }
+  font-size: 1.1rem !important; }
 
 .is-size-7 {
   font-size: 0.75rem !important; }
@@ -6429,7 +6435,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-5-mobile {
     font-size: 1.5rem !important; }
   .is-size-6-mobile {
-    font-size: 1.25rem !important; }
+    font-size: 1.1rem !important; }
   .is-size-7-mobile {
     font-size: 0.75rem !important; } }
 
@@ -6445,7 +6451,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-5-tablet {
     font-size: 1.5rem !important; }
   .is-size-6-tablet {
-    font-size: 1.25rem !important; }
+    font-size: 1.1rem !important; }
   .is-size-7-tablet {
     font-size: 0.75rem !important; } }
 
@@ -6461,7 +6467,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-5-touch {
     font-size: 1.5rem !important; }
   .is-size-6-touch {
-    font-size: 1.25rem !important; }
+    font-size: 1.1rem !important; }
   .is-size-7-touch {
     font-size: 0.75rem !important; } }
 
@@ -6477,7 +6483,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-5-desktop {
     font-size: 1.5rem !important; }
   .is-size-6-desktop {
-    font-size: 1.25rem !important; }
+    font-size: 1.1rem !important; }
   .is-size-7-desktop {
     font-size: 0.75rem !important; } }
 

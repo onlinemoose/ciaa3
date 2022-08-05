@@ -1,0 +1,72 @@
+---
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import PostPreview from "../../components/posts/PostPreview.astro";
+import parse from 'node-html-parser';
+
+let title = "Chinese Internal Arts Association of Great Britain";
+let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+
+const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
+    {
+      method:'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        query: `
+
+          query getPosts {
+                posts {
+                    title
+                    postSummary
+                    postDate
+                    content {
+                        html
+                    }
+                }
+          }
+
+          `,
+      }),
+    })
+
+const json = await response.json();
+const posts = json.data.posts;
+
+posts.map((post) => {
+
+    let cleanId = post.title.replace(/\s+/g, '-').toLowerCase();
+    post.id = cleanId;
+    let cleanContent = parse(post.content.html);
+    post.html = cleanContent;
+
+    return {
+        props: { post }
+    };
+});
+
+---
+
+<Layout>
+
+    <Header slot="header-content" title={title} description={description} keywords={keywords}/>
+
+    <section slot="main-content" class="section">
+
+        <div class="container">
+            <h2 class="title">CIAA Blog</h2>
+        
+            <div aria-label="Blog post list">
+                {posts.map((post) => (
+                    <PostPreview
+                        title={post.title}
+                        description={post.postSummary}
+                        publishDate={post.postDate}
+                        url={post.id}
+                    />
+                ))}
+            </div>
+        </div>
+    </section>
+
+</Layout>

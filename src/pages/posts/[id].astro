@@ -38,7 +38,6 @@ export async function getStaticPaths() {
     };
   });
 }
-console.log(Astro.props)
 
 const { id } = Astro.params;
 const { post } = Astro.props;
@@ -54,10 +53,24 @@ let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xin
 
   <Header slot="header-content" title={title} description={description} keywords={keywords}/>
 
-  <div slot="main-content" class="section content">
-    <h2>{post.title}</h2>
-    <p>{cleanContent}</p>
+  <div slot="main-content" class="section">
+    <div class="container">
+
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/posts/">Posts</a></li>
+          <li class="is-active"><a href="#" aria-current="page">{post.title}</a></li>
+        </ul>
+      </nav>
+
+      <h2 class="title is-3">{post.title}</h2>
+      <div class="content">
+        <p>{cleanContent}</p>
+      </div>
+    </div>
   </div>
+
 </Layout>
 
 
