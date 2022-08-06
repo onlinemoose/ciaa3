@@ -2,6 +2,7 @@
 import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
 import PostPreview from "../../components/posts/PostPreview.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import parse from 'node-html-parser';
 
 let title = "Chinese Internal Arts Association of Great Britain";
@@ -54,6 +55,9 @@ posts.map((post) => {
     <section slot="main-content" class="section">
 
         <div class="container">
+
+            <Breadcrumb /> 
+
             <h2 class="title">CIAA Blog</h2>
         
             <div aria-label="Blog post list">

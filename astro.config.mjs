@@ -10,4 +10,7 @@ export default defineConfig(
           noExternal: ['@fontsource/*']
         }
       }
+    },
+    {
+      site: 'http://localhost:3000/'
     });

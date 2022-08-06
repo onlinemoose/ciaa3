@@ -1,0 +1,36 @@
+---
+const first = { crumbname: "HOME", url : Astro.url.origin};
+
+let secondPath;
+let secondStripPath;
+let thirdPath;
+let thirdStripPath;
+let fourthPath;
+let fourthStripPath;
+let firstPath = Astro.url.pathname.split('/')[0];
+
+secondPath = Astro.url.pathname.split('/')[1];
+secondPath ? secondStripPath = secondPath.replace(/-/g, ' ') : null;
+secondPath ? secondStripPath = secondStripPath.toUpperCase() : null;
+
+thirdPath = Astro.url.pathname.split('/')[2];
+thirdPath ? thirdStripPath = thirdPath.replace(/-/g, ' ') : null;
+thirdPath ? thirdStripPath = thirdStripPath.toUpperCase() : null;
+
+fourthPath = Astro.url.pathname.split('/')[3];
+fourthPath ? fourthStripPath = fourthPath.replace(/-/g, ' ') : null;
+fourthPath ? fourthStripPath = fourthStripPath.toUpperCase() : null;
+
+const second = { crumbname: secondStripPath, url: "/" + secondPath + "/"};
+const third = { crumbname: thirdStripPath, url: "/" + secondPath + "/" + thirdPath + "/"};
+const fourth = { crumbname: fourthStripPath, url: "/" + secondPath + "/" + thirdPath + "/" + fourthPath + "/"};
+---
+
+<nav class="breadcrumb is-small" aria-label="breadcrumbs">
+    <ul>
+        <li><a href={first.url}>{first.crumbname}</a></li>
+        { second.crumbname ? <li class={third.crumbname ? null : "is-active"}><a href={second.url}>{second.crumbname}</a></li> : null}
+        { third.crumbname ? <li class={fourth.crumbname ? null : "is-active"}><a href={third.url}>{third.crumbname}</a></li> : null }
+        { fourth.crumbname ?  <li class="is-active"><a href={fourth.url}>{fourth.crumbname}</a></li> : null }
+    </ul>
+  </nav>

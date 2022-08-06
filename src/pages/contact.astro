@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 
 let title = "Chinese Internal Arts Association of Great Britain";
 let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
@@ -11,6 +12,7 @@ let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xin
     <Header slot="header-content" title={title} description={description} keywords={keywords}/>
     
     <section slot="main-content" class="section">
+        <Breadcrumb />
         <div class="container content">
             <h2>Contact The CIAA</h2>
             Eva Koskuba
