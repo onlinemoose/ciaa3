@@ -1,5 +1,29 @@
-<section class="section has-background-danger">
-    <div class="message">
-        <p class="p-2">Text</p>
-    </div>
-</section>
+---
+const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
+  {
+    method:'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      query: `
+
+        query getRetreat {
+            flash(where: {id: "cl6jmwxw43yaj0blc0mw9crc7"}) {
+                flashMessage
+            }
+        }
+
+        `,
+    }),
+  })
+
+const json = await response.json();
+const flash = json.data.flash.flashMessage;
+---
+
+{ flash ? 
+    <section class="section has-background-danger">
+        <div class="message">
+            <p class="p-2 has-text-centered is-smaller">{flash}</p>
+        </div>
+    </section>
+ : null}
