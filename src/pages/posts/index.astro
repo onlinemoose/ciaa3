@@ -37,7 +37,7 @@ const posts = json.data.posts;
 posts.map((post) => {
 
     let cleanId = post.title.replace(/\s+/g, '-').toLowerCase();
-    post.id = cleanId;
+    post.id = "/posts/" + cleanId;
     let cleanContent = parse(post.content.html);
     post.html = cleanContent;
 

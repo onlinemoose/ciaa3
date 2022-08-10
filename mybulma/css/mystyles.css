@@ -1,18 +1,17 @@
 nav, h1, h2:not(.subtitle), h3:not(.subtitle), h4, h5, h6 {
   font-family: "Crimson Pro", serif;
-  letter-spacing: -.03rem; }
+  letter-spacing: -.02rem; }
 
 a, p, .subtitle {
   font-family: "Inter", sans-serif; }
 
 blockquote {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500; }
 
 p {
-  font-size: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.01rem; }
+  font-size: 1em;
+  font-weight: 400; }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -28,7 +27,7 @@ p {
   border-radius: 4px;
   box-shadow: none;
   display: inline-flex;
-  font-size: 1.1rem;
+  font-size: 1rem;
   height: 2.5em;
   justify-content: flex-start;
   line-height: 1.5;
@@ -1233,11 +1232,11 @@ a.box:active {
     .button.is-small:not(.is-rounded) {
       border-radius: 2px; }
   .button.is-normal {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .button.is-medium {
     font-size: 1.5rem; }
   .button.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .button[disabled],
   fieldset[disabled] .button {
     background-color: white;
@@ -1286,7 +1285,7 @@ a.box:active {
   .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large) {
     font-size: 1.5rem; }
   .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .buttons.has-addons .button:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
@@ -1325,7 +1324,7 @@ a.box:active {
   .button.is-responsive.is-medium {
     font-size: 0.75rem; }
   .button.is-responsive.is-large {
-    font-size: 1.1rem; } }
+    font-size: 1rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .button.is-responsive.is-small {
@@ -1334,7 +1333,7 @@ a.box:active {
   .button.is-responsive.is-normal {
     font-size: 0.75rem; }
   .button.is-responsive.is-medium {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .button.is-responsive.is-large {
     font-size: 1.5rem; } }
 
@@ -1492,13 +1491,13 @@ a.box:active {
   font-size: 0.75rem; }
 
 .content.is-normal {
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 .content.is-medium {
   font-size: 1.5rem; }
 
 .content.is-large {
-  font-size: 1.75rem; }
+  font-size: 1.9rem; }
 
 .icon {
   align-items: center;
@@ -1694,7 +1693,7 @@ div.icon-text {
   border: none;
   border-radius: 9999px;
   display: block;
-  height: 1.1rem;
+  height: 1rem;
   overflow: hidden;
   padding: 0;
   width: 100%; }
@@ -1808,7 +1807,7 @@ div.icon-text {
   .progress.is-medium {
     height: 1.5rem; }
   .progress.is-large {
-    height: 1.75rem; }
+    height: 1.9rem; }
 
 @keyframes moveIndeterminate {
   from {
@@ -1962,7 +1961,7 @@ div.icon-text {
   .tags:not(:last-child) {
     margin-bottom: 1rem; }
   .tags.are-medium .tag:not(.is-normal):not(.is-large) {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium) {
     font-size: 1.5rem; }
   .tags.is-centered {
@@ -2053,7 +2052,7 @@ div.icon-text {
   .tag:not(body).is-normal {
     font-size: 0.75rem; }
   .tag:not(body).is-medium {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .tag:not(body).is-large {
     font-size: 1.5rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
@@ -2130,11 +2129,11 @@ a.tag:hover {
   .title.is-3, h3.title {
     font-size: 2.5rem; }
   .title.is-4, h4.title {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .title.is-5, h5.title {
     font-size: 1.5rem; }
   .title.is-6, h6.title {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .title.is-7 {
     font-size: 0.75rem; }
 
@@ -2142,7 +2141,7 @@ a.tag:hover {
   color: #757763;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.25; }
+  line-height: 1.35; }
   .subtitle strong {
     color: #363636;
     font-weight: 600; }
@@ -2155,11 +2154,11 @@ a.tag:hover {
   .subtitle.is-3, h3.subtitle {
     font-size: 2.5rem; }
   .subtitle.is-4, h4.subtitle {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .subtitle.is-5, h5.subtitle {
     font-size: 1.5rem; }
   .subtitle.is-6, h6.subtitle {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .subtitle.is-7 {
     font-size: 0.75rem; }
 
@@ -2289,7 +2288,7 @@ a.tag:hover {
   .is-medium.input, .is-medium.textarea {
     font-size: 1.5rem; }
   .is-large.input, .is-large.textarea {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .is-fullwidth.input, .is-fullwidth.textarea {
     display: block;
     width: 100%; }
@@ -2463,7 +2462,7 @@ a.tag:hover {
   .select.is-medium {
     font-size: 1.5rem; }
   .select.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a !important;
     opacity: 0.5; }
@@ -2482,7 +2481,7 @@ a.tag:hover {
   .select.is-loading.is-medium:after {
     font-size: 1.5rem; }
   .select.is-loading.is-large:after {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
 
 .file {
   align-items: stretch;
@@ -2652,13 +2651,13 @@ a.tag:hover {
   .file.is-small {
     font-size: 0.75rem; }
   .file.is-normal {
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   .file.is-medium {
     font-size: 1.5rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
   .file.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
     .file.is-large .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
@@ -2774,7 +2773,7 @@ a.tag:hover {
 .label {
   color: #363636;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700; }
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
@@ -2783,7 +2782,7 @@ a.tag:hover {
   .label.is-medium {
     font-size: 1.5rem; }
   .label.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
 
 .help {
   display: block;
@@ -2920,7 +2919,7 @@ a.tag:hover {
       font-size: 1.5rem;
       padding-top: 0.375em; }
     .field-label.is-large {
-      font-size: 1.75rem;
+      font-size: 1.9rem;
       padding-top: 0.375em; } }
 
 .field-body .field .field {
@@ -2944,7 +2943,7 @@ a.tag:hover {
 .control {
   box-sizing: border-box;
   clear: both;
-  font-size: 1.1rem;
+  font-size: 1rem;
   position: relative;
   text-align: inherit; }
   .control.has-icons-left .input:focus ~ .icon,
@@ -2962,7 +2961,7 @@ a.tag:hover {
   .control.has-icons-left .input.is-large ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
     height: 2.5em;
@@ -2991,11 +2990,11 @@ a.tag:hover {
   .control.is-loading.is-medium:after {
     font-size: 1.5rem; }
   .control.is-loading.is-large:after {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
 
 /* Bulma Components */
 .breadcrumb {
-  font-size: 1.1rem;
+  font-size: 1rem;
   white-space: nowrap; }
   .breadcrumb a {
     align-items: center;
@@ -3038,7 +3037,7 @@ a.tag:hover {
   .breadcrumb.is-medium {
     font-size: 1.5rem; }
   .breadcrumb.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
   .breadcrumb.has-bullet-separator li + li::before {
@@ -3310,13 +3309,13 @@ button.dropdown-item {
     overflow-x: auto; } }
 
 .menu {
-  font-size: 1.1rem; }
+  font-size: 1rem; }
   .menu.is-small {
     font-size: 0.75rem; }
   .menu.is-medium {
     font-size: 1.5rem; }
   .menu.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
 
 .menu-list {
   line-height: 1.25; }
@@ -3349,7 +3348,7 @@ button.dropdown-item {
 .message {
   background-color: whitesmoke;
   border-radius: 4px;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
   .message strong {
     color: currentColor; }
   .message a:not(.button):not(.tag):not(.dropdown-item) {
@@ -3360,7 +3359,7 @@ button.dropdown-item {
   .message.is-medium {
     font-size: 1.5rem; }
   .message.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .message.is-white {
     background-color: white; }
     .message.is-white .message-header {
@@ -3533,7 +3532,7 @@ button.dropdown-item {
   color: #363636;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   line-height: 1; }
 
 .modal-card-foot {
@@ -4346,14 +4345,14 @@ a.navbar-item,
   min-height: calc(100vh - 3.25rem); }
 
 .pagination {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: -0.25rem; }
   .pagination.is-small {
     font-size: 0.75rem; }
   .pagination.is-medium {
     font-size: 1.5rem; }
   .pagination.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
   .pagination.is-rounded .pagination-previous,
   .pagination.is-rounded .pagination-next {
     padding-left: 1em;
@@ -4479,7 +4478,7 @@ a.navbar-item,
 .panel {
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  font-size: 1.1rem; }
+  font-size: 1rem; }
   .panel:not(:last-child) {
     margin-bottom: 1.5rem; }
   .panel.is-white .panel-heading {
@@ -4632,7 +4631,7 @@ label.panel-block {
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
   display: flex;
-  font-size: 1.1rem;
+  font-size: 1rem;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
@@ -4734,7 +4733,7 @@ label.panel-block {
   .tabs.is-medium {
     font-size: 1.5rem; }
   .tabs.is-large {
-    font-size: 1.75rem; }
+    font-size: 1.9rem; }
 
 /* Bulma Grid */
 .column {
@@ -6412,13 +6411,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-size: 2.5rem !important; }
 
 .is-size-4 {
-  font-size: 1.75rem !important; }
+  font-size: 1.9rem !important; }
 
 .is-size-5 {
   font-size: 1.5rem !important; }
 
 .is-size-6 {
-  font-size: 1.1rem !important; }
+  font-size: 1rem !important; }
 
 .is-size-7 {
   font-size: 0.75rem !important; }
@@ -6431,11 +6430,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-3-mobile {
     font-size: 2.5rem !important; }
   .is-size-4-mobile {
-    font-size: 1.75rem !important; }
+    font-size: 1.9rem !important; }
   .is-size-5-mobile {
     font-size: 1.5rem !important; }
   .is-size-6-mobile {
-    font-size: 1.1rem !important; }
+    font-size: 1rem !important; }
   .is-size-7-mobile {
     font-size: 0.75rem !important; } }
 
@@ -6447,11 +6446,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-3-tablet {
     font-size: 2.5rem !important; }
   .is-size-4-tablet {
-    font-size: 1.75rem !important; }
+    font-size: 1.9rem !important; }
   .is-size-5-tablet {
     font-size: 1.5rem !important; }
   .is-size-6-tablet {
-    font-size: 1.1rem !important; }
+    font-size: 1rem !important; }
   .is-size-7-tablet {
     font-size: 0.75rem !important; } }
 
@@ -6463,11 +6462,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-3-touch {
     font-size: 2.5rem !important; }
   .is-size-4-touch {
-    font-size: 1.75rem !important; }
+    font-size: 1.9rem !important; }
   .is-size-5-touch {
     font-size: 1.5rem !important; }
   .is-size-6-touch {
-    font-size: 1.1rem !important; }
+    font-size: 1rem !important; }
   .is-size-7-touch {
     font-size: 0.75rem !important; } }
 
@@ -6479,11 +6478,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-size-3-desktop {
     font-size: 2.5rem !important; }
   .is-size-4-desktop {
-    font-size: 1.75rem !important; }
+    font-size: 1.9rem !important; }
   .is-size-5-desktop {
     font-size: 1.5rem !important; }
   .is-size-6-desktop {
-    font-size: 1.1rem !important; }
+    font-size: 1rem !important; }
   .is-size-7-desktop {
     font-size: 0.75rem !important; } }
 

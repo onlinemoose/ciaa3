@@ -43,6 +43,8 @@ export async function getStaticPaths() {
 const { id } = Astro.params;
 const { post } = Astro.props;
 
+console.log(id);
+
 const cleanContent = parse(post.content.html);
 
 let title = "Chinese Internal Arts Association of Great Britain";

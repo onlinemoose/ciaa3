@@ -3,15 +3,14 @@
 $size-1: 4rem;
 $size-2: 3rem;
 $size-3: 2.5rem;
-$size-4: 1.75rem;
+$size-4: 1.9rem;
 $size-5: 1.5rem;
-$size-6: 1.25rem;
-$size-6: 1.1rem;
+$size-6: 1rem;
 
 
 nav, h1, h2:not(.subtitle), h3:not(.subtitle), h4, h5, h6 { 
     font-family: "Crimson Pro", serif; 
-    letter-spacing: -.03rem;
+    letter-spacing: -.02rem;
 }
 
 h1 {
@@ -43,14 +42,13 @@ a, p, .subtitle {
 }
 
 blockquote {
-    font-size: $size-6;
+    font-size: $size-5;
     font-weight: 500;
 }
 
 p {
-  font-size: 1.2;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: -0.01rem;
 }
 
 // Set your brand colors
@@ -67,6 +65,7 @@ $primary: $purple;
 $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
+$subtitle-line-height: 1.35;
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;
