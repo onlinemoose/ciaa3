@@ -1,4 +1,5 @@
 ---
+import parse from 'node-html-parser';
 
 const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
   {
@@ -23,7 +24,7 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
 const json = await response.json();
 const homecontent = json.data;
 
-let sndContent
+let sndContent = parse(homecontent.home.secondaryContent.html)
 
 ---
 
