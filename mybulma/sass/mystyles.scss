@@ -52,16 +52,24 @@ p {
 }
 
 // Set your brand colors
-$purple: #8A4D76;
+$purple: #844e6b;
 $pink: #e26b7f;
+$seablue: #084c6e;
 $brown: #757763;
+$beige-lightest: #FDFAF0;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
 $grey-dark: $brown;
-$grey-light: $beige-light;
+$grey-light: $beige-lightest;
 $primary: $purple;
+$info: $seablue;
+$background: $beige-lightest;
+$navbar-item-color: $beige-lightest;
+$navbar-dropdown-background-color: $seablue;
+$navbar-item-hover-background-color: $seablue;
+$navbar-item-active-color: $pink;
 $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
