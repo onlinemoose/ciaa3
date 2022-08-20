@@ -447,7 +447,7 @@ a.box:active {
     margin-left: calc(-0.5em - 2px);
     margin-right: calc(-0.5em - 2px); }
   .button:hover, .button.is-hovered {
-    border-color: #FDFAF0;
+    border-color: #f3b2bd;
     color: #363636; }
   .button:focus, .button.is-focused {
     border-color: #485fc7;
@@ -2198,7 +2198,7 @@ a.tag:hover {
   .input:-ms-input-placeholder, .textarea:-ms-input-placeholder, .select select:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input:hover, .textarea:hover, .select select:hover, .is-hovered.input, .is-hovered.textarea, .select select.is-hovered {
-    border-color: #FDFAF0; }
+    border-color: #f3b2bd; }
   .input:focus, .textarea:focus, .select select:focus, .is-focused.input, .is-focused.textarea, .select select.is-focused, .input:active, .textarea:active, .select select:active, .is-active.input, .is-active.textarea, .select select.is-active {
     border-color: #e26b7f;
     box-shadow: 0 0 0 0.125em rgba(226, 107, 127, 0.25); }
@@ -3014,7 +3014,7 @@ a.tag:hover {
       cursor: default;
       pointer-events: none; }
     .breadcrumb li + li::before {
-      color: #FDFAF0;
+      color: #f3b2bd;
       content: "\0002f"; }
   .breadcrumb ul,
   .breadcrumb ol {
@@ -4388,7 +4388,7 @@ a.navbar-item,
   .pagination-previous:hover,
   .pagination-next:hover,
   .pagination-link:hover {
-    border-color: #FDFAF0;
+    border-color: #f3b2bd;
     color: #363636; }
   .pagination-previous:focus,
   .pagination-next:focus,
@@ -4421,7 +4421,7 @@ a.navbar-item,
   color: #fff; }
 
 .pagination-ellipsis {
-  color: #FDFAF0;
+  color: #f3b2bd;
   pointer-events: none; }
 
 .pagination-list {
@@ -4703,7 +4703,7 @@ label.panel-block {
     position: relative; }
     .tabs.is-toggle a:hover {
       background-color: #FDFAF0;
-      border-color: #FDFAF0;
+      border-color: #f3b2bd;
       z-index: 2; }
   .tabs.is-toggle li + li {
     margin-left: -1px; }
@@ -5815,10 +5815,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #7a7a7a !important; }
 
 .has-text-grey-light {
-  color: #FDFAF0 !important; }
+  color: #f3b2bd !important; }
 
 .has-background-grey-light {
-  background-color: #FDFAF0 !important; }
+  background-color: #f3b2bd !important; }
 
 .has-text-grey-lighter {
   color: #dbdbdb !important; }

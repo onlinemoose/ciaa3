@@ -45,7 +45,6 @@ const features = homecontent.home.homepageFeatures;
 
     <Hero />
     <SecondaryContent />
-    <PromoteAssociations />
     {features.map(feature => 
         <FeatureContent
             title={feature.title}
@@ -56,4 +55,5 @@ const features = homecontent.home.homepageFeatures;
             keepleft={feature.keepImgLeft}
         />
     )}
+    <PromoteAssociations />
 </main>

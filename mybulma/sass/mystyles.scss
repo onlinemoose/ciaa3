@@ -53,7 +53,8 @@ p {
 
 // Set your brand colors
 $purple: #844e6b;
-$pink: #e26b7f;
+$pink: #e26b7f; 
+$light-pink: #f3b2bd;
 $seablue: #084c6e;
 $brown: #757763;
 $beige-lightest: #FDFAF0;
@@ -62,7 +63,7 @@ $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
 $grey-dark: $brown;
-$grey-light: $beige-lightest;
+$grey-light: $light-pink;
 $primary: $purple;
 $info: $seablue;
 $background: $beige-lightest;
