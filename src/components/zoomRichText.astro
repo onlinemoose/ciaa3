@@ -1,0 +1,17 @@
+---
+export interface Props {
+	richText: string;
+}
+
+const { richText } = Astro.props;
+
+---
+
+<style>
+    p { 
+        color: red;
+        font-size: 4rem;
+    }
+</style>
+<p>hello</p>
+<section set:html={richText}/>
