@@ -338,14 +338,14 @@ a {
     color: #363636; }
 
 code {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   color: #da1039;
   font-size: 0.875em;
   font-weight: normal;
   padding: 0.25em 0.5em 0.25em; }
 
 hr {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border: none;
   display: block;
   height: 2px;
@@ -375,7 +375,7 @@ fieldset {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   color: #757763;
   font-size: 0.875em;
   overflow-x: auto;
@@ -463,10 +463,10 @@ a.box:active {
     color: #757763;
     text-decoration: underline; }
     .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       color: #363636; }
     .button.is-text:active, .button.is-text.is-active {
-      background-color: #faf3da;
+      background-color: #e8e8e8;
       color: #363636; }
     .button.is-text[disabled],
     fieldset[disabled] .button.is-text {
@@ -1404,7 +1404,7 @@ a.box:active {
   margin-bottom: 1em; }
 
 .content blockquote {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border-left: 5px solid #dbdbdb;
   padding: 1.25em 1.5em; }
 
@@ -1616,7 +1616,7 @@ div.icon-text {
     width: 128px; }
 
 .notification {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border-radius: 4px;
   position: relative;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem; }
@@ -1987,7 +1987,7 @@ div.icon-text {
 
 .tag:not(body) {
   align-items: center;
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border-radius: 4px;
   color: #757763;
   display: inline-flex;
@@ -2085,9 +2085,9 @@ div.icon-text {
       height: 50%;
       width: 1px; }
     .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
-      background-color: #faf3da; }
+      background-color: #e8e8e8; }
     .tag:not(body).is-delete:active {
-      background-color: #f7ebc3; }
+      background-color: #dbdbdb; }
   .tag:not(body).is-rounded {
     border-radius: 9999px; }
 
@@ -2171,7 +2171,7 @@ a.tag:hover {
 
 .number {
   align-items: center;
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border-radius: 9999px;
   display: inline-flex;
   font-size: 1.5rem;
@@ -2207,8 +2207,8 @@ a.tag:hover {
   fieldset[disabled] .textarea,
   fieldset[disabled] .select select,
   .select fieldset[disabled] select {
-    background-color: #FDFAF0;
-    border-color: #FDFAF0;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
     box-shadow: none;
     color: #7a7a7a; }
     .input[disabled]::-moz-placeholder, .textarea[disabled]::-moz-placeholder, .select select[disabled]::-moz-placeholder,
@@ -2366,7 +2366,7 @@ a.tag:hover {
       display: none; }
     .select select[disabled]:hover,
     fieldset[disabled] .select select:hover {
-      border-color: #FDFAF0; }
+      border-color: whitesmoke; }
     .select select:not([multiple]) {
       padding-right: 2.5em; }
     .select select[multiple] {
@@ -3177,7 +3177,7 @@ button.dropdown-item {
   width: 100%; }
   a.dropdown-item:hover,
   button.dropdown-item:hover {
-    background-color: #FDFAF0;
+    background-color: whitesmoke;
     color: #0a0a0a; }
   a.dropdown-item.is-active,
   button.dropdown-item.is-active {
@@ -3325,7 +3325,7 @@ button.dropdown-item {
     display: block;
     padding: 0.5em 0.75em; }
     .menu-list a:hover {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       color: #363636; }
     .menu-list a.is-active {
       background-color: #e26b7f;
@@ -3346,7 +3346,7 @@ button.dropdown-item {
     margin-bottom: 1em; }
 
 .message {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border-radius: 4px;
   font-size: 1rem; }
   .message strong {
@@ -3516,7 +3516,7 @@ button.dropdown-item {
 .modal-card-head,
 .modal-card-foot {
   align-items: center;
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   display: flex;
   flex-shrink: 0;
   justify-content: flex-start;
@@ -3551,7 +3551,7 @@ button.dropdown-item {
   padding: 20px; }
 
 .navbar {
-  background-color: white;
+  background-color: #084c6e;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -4011,7 +4011,7 @@ button.dropdown-item {
     min-height: 3.25rem;
     width: 100%; }
   .navbar.has-shadow {
-    box-shadow: 0 2px 0 0 #FDFAF0; }
+    box-shadow: 0 2px 0 0 whitesmoke; }
   .navbar.is-fixed-bottom, .navbar.is-fixed-top {
     left: 0;
     position: fixed;
@@ -4020,7 +4020,7 @@ button.dropdown-item {
   .navbar.is-fixed-bottom {
     bottom: 0; }
     .navbar.is-fixed-bottom.has-shadow {
-      box-shadow: 0 -2px 0 0 #FDFAF0; }
+      box-shadow: 0 -2px 0 0 whitesmoke; }
   .navbar.is-fixed-top {
     top: 0; }
 
@@ -4049,7 +4049,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #FDFAF0;
+  color: #ffffff;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -4092,7 +4092,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #FDFAF0;
+  color: #ffffff;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -4111,7 +4111,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #084c6e;
-    color: #e26b7f; }
+    color: #EFF0EB; }
 
 .navbar-item {
   flex-grow: 0;
@@ -4158,7 +4158,7 @@ a.navbar-item,
     padding-right: 1.5rem; }
 
 .navbar-divider {
-  background-color: #FDFAF0;
+  background-color: whitesmoke;
   border: none;
   display: none;
   height: 2px;
@@ -4174,7 +4174,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: white;
+    background-color: #084c6e;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
@@ -4226,10 +4226,10 @@ a.navbar-item,
     .navbar.is-transparent .navbar-item.has-dropdown.is-active .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus-within .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:hover .navbar-link {
       background-color: transparent !important; }
     .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       color: #0a0a0a; }
     .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       color: #e26b7f; }
   .navbar-burger {
     display: none; }
@@ -4282,10 +4282,10 @@ a.navbar-item,
     .navbar-dropdown a.navbar-item {
       padding-right: 3rem; }
       .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item:hover {
-        background-color: #FDFAF0;
+        background-color: whitesmoke;
         color: #0a0a0a; }
       .navbar-dropdown a.navbar-item.is-active {
-        background-color: #FDFAF0;
+        background-color: whitesmoke;
         color: #e26b7f; }
     .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
       border-radius: 6px;
@@ -4334,7 +4334,7 @@ a.navbar-item,
     padding-bottom: 5.25rem; }
   a.navbar-item.is-active,
   .navbar-link.is-active {
-    color: #e26b7f; }
+    color: #0a0a0a; }
   a.navbar-item.is-active:not(:focus):not(:hover),
   .navbar-link.is-active:not(:focus):not(:hover) {
     background-color: transparent; }
@@ -4611,7 +4611,7 @@ label.panel-block {
   cursor: pointer; }
   a.panel-block:hover,
   label.panel-block:hover {
-    background-color: #FDFAF0; }
+    background-color: whitesmoke; }
 
 .panel-icon {
   display: inline-block;
@@ -4686,7 +4686,7 @@ label.panel-block {
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0; }
     .tabs.is-boxed a:hover {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       border-bottom-color: #dbdbdb; }
   .tabs.is-boxed li.is-active a {
     background-color: white;
@@ -4702,7 +4702,7 @@ label.panel-block {
     margin-bottom: 0;
     position: relative; }
     .tabs.is-toggle a:hover {
-      background-color: #FDFAF0;
+      background-color: whitesmoke;
       border-color: #f3b2bd;
       z-index: 2; }
   .tabs.is-toggle li + li {
