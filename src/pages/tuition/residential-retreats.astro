@@ -3,18 +3,48 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro'
 import Breadcrumb from '../../components/Breadcrumb.astro';
 
+const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg601t386sw5d49/master",
+  {
+    method:'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      query: `
+
+        query getRetreatsContent {
+            retreat(where: {id:"cleu9fzhneasi0amqocvdlz5r"}) {
+                title
+                subTitle
+                descriptionParagraph
+                retreatsInfo {
+                    html
+                }
+            }
+        }
+
+
+        `,
+    }),
+  })
+
+const json = await response.json();
+const retreatContent = json.data.retreat;
+
 let title = "Chinese Internal Arts Association of Great Britain";
 let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
 let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
 ---
+
 <Layout>
 
     <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
-    
     <section slot="main-content" class="section">
         <div class="container">
             <Breadcrumb />
-            <p>Residential Courses Page</p>
+            <h2 class="title">{retreatContent.title}</h2>
+            <h4 class="title">{retreatContent.subTitle}</h4>
+            <p>{retreatContent.descriptionParagraph}</p>
+            <br/>
+            <div class="content" set:html={retreatContent.retreatsInfo.html} />
         </div>
     </section>
 

@@ -1,0 +1,54 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import Header from '../../../components/Header.astro'
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+
+let title = "Chinese Internal Arts Association of Great Britain";
+let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+---
+
+<Layout>
+   
+    <Header slot="header-content" title={title} description={description} keywords={keywords}/>
+
+    <section slot="main-content" class="section">
+        <div class="container">
+            <Breadcrumb />
+            <div class="content">
+                <h2 class="title">Four-year Yiquan Instructors Course</h2>
+                <p>Tutors: Karel & Eva Koskuba</p>
+                <h4 class="title">Course Aim</h4>
+                <p class="subtitle is-size-5">To study Yiquan in depth and to train students to a professionally competent level in the teaching of Yiquan classes.</p>
+
+                <h4>Entry Requirements:</h4>
+                <p>The course will be suitable for students at intermediate/advanced level with at least two years Yiquan experience.</p> 
+                <p>Each year there will be a combination of workshops, individual lessons and residential weekends. Dates will be given later.</p>
+                <h4>Course Outline</h4>
+                <p>At the completion of the course the students will have gained both a practical and theoretical understanding of Yiquan.</p>
+                <p>During the course the students will:</p>
+                <ul>
+                    <li>learn in detail the health set of Zhan Zhuang postures</li>
+                    <li>understand the principles behind whole-body movement and power and achieve a reasonable level of competence in both</li>
+                    <li>learn and understand the five stages of Moli practice</li>
+                    <li>learn and understand Shili practice</li>
+                    <li>learn and understand Fali practice</li>
+                    <li>learn Yiquan style of Pushing Hands and achieve a reasonable level of competence</li>
+                    <li>study Push Hands (Tui Shou) techniques and their applications</li>
+                    <li>learn defensive and offensive fighting drills/applications</li>
+                    <li>learn how to develop Yiquan 'Health Dance'</li>
+                    <li>learn to make a distinction between Yiquan as a Martial discipline and a Health discipline</li>
+                    <li>appreciate and learn to use the therapeutic aspects of Yiquan</li>
+                    <li>study the origin of Yiquan and its history</li>
+                </ul>
+                <p>At the end of the course only those students who have achieved a reasonable level will be awarded a teaching certificate. Martial ability takes time to develop and thus only the students can demonstrate a good proficiency in competitive Pushing Hands and martial ability will be awarded a full certificate. Those that cannot, will be awarded a Yiquan-for-Health certificate that can be converted to a full certificate when they can demonstrate satisfactory level of martial ability.</p>
+                <p>Students will need to wear clothes and shoes suitable for Yiquan practice both indoors and outdoors, and have a pen/pencil with a writing pad for making notes.</p>
+                <p>If you would like to know more, or you are not sure whether the course is for you, feel free to telephone on 07905 514989 to discuss it with Karel or Eva before coming to your decision.</p>
+                <h4>More About The Tutors:</h4>
+                <p>Karel Koskuba has been studying Internal Martial Arts and Qigong since 1978, and teaching since 1984.  Karel is the head of the Chinese Internal Arts Association and leads the Taijiquan and Yiquan Instructors Courses and the Qigong Practitioners Course.  He devised and wrote the Taijiquan and Qigong-based exercises for the Battle Hospital, Reading.  He gives seminars on Internal Martial Arts and Qigong in UK and abroad.</p>
+                <p>Eva Koskuba has been studying Internal Martial Arts and Qigong since 1982 and teaching since 1986.  She teaches (and organizes) on the Taijiquan and Yiquan Instructors Courses and the Qigong Practitioners Course, and was the head of the Battle Hospital project teaching Taiji and Qigong based exercises there.  She gives seminars on Taijiquan and Qigong in UK and abroad.</p>
+            </div>
+        </div>
+    </section>
+
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro'
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+
+let title = "Chinese Internal Arts Association of Great Britain";
+let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+---
+
+<Layout>
+   
+    <Header slot="header-content" title={title} description={description} keywords={keywords}/>
+
+    <section slot="main-content" class="section">
+        <div class="container">
+            <Breadcrumb />
+            <div class="content">
+            <h2 class="title">CIAA Courses</h2>
+            <p>
+            Become qualified to teach others the internal martial arts with these three and four year courses, run on a part-time basis.
+            </p>
+            <ul>
+                <li><a href="/tuition/ciaa-courses/taijiquan/">Taijiquan Instructors Course</a></li>
+                <li><a href="/tuition/ciaa-courses/qigong/">Qigong Practitioners Course</a></li>
+                <li><a href="/tuition/ciaa-courses/yiquan/">Yiquan Instructors Course</a></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+</Layout>
