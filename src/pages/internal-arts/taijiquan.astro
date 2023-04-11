@@ -3,19 +3,21 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro'
 import Breadcrumb from '../../components/Breadcrumb.astro';
 
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
-let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+let title = "Tai Chi Explanation Detail Page";
+let description = "Over 20 years experience explaining Tai Chi to beginners and instructors online and in Reading, Berkshire (also known as Taiji, Taijiquan).";
+let keywords = "taijiquan, taiji, tai chi, taichi, martial art, self defense, Berkshire, Reading";
+let canonicals = "/internal-arts/taijiquan/";
 ---
 <Layout>
 
-    <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
+    <Header slot="header-content" title={title} description={description} keywords={keywords} canonicals={canonicals}/>    
 
     <section slot="main-content" class="section">
         <div class="container">
             <Breadcrumb />
             <div class="content">
             <h2 class="title">Taijiquan (Tai Chi Chuan)</h2>
+            <h1>The current URL is: {Astro.site}</h1>
             <p class="subtitle">The page <a href="/internal-arts/">Internal Arts</a> gives more information on theory and benefits.</p>
             <p>Taijiquan (Yin Yang boxing, sometimes translated as Great Ultimate boxing) is the best known style of the Internal Martial Arts. Unlike Xingyiquan and Baguazhang it does not restrict itself in the initial assumptions and thus can be said to be more complete. This probably makes it more difficult to master. An important element of Taijiquan training is Pushing Hands. There are five major styles of Taijiquan - Chen, Yang, Woo, Wu and Sun. We practise Chen and Yang styles (for tuition see our <a href="/tuition/">list of classes</a>).</p>
 
