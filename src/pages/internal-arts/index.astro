@@ -3,13 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro'
 import Breadcrumb from '../../components/Breadcrumb.astro';
 
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "Offering Tai Chi for beginners. Training Tai Chi instructors for over 20 years through CIAA. We are experts in Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong. Offer Tai Chi weekly classes and Chinese Exercises in Berkshire and online.";
+let title = "Internal Martial Arts Overview Page";
+let description = "Overview of all major Internal Martial Arts by the teachers who teach many of the UK's leading Tai Chi instructors.";
 let keywords = "taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+let canonicals = "internal-arts/"
 ---
 <Layout>
 
-    <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
+    <Header slot="header-content" title={title} description={description} keywords={keywords} canonicals={canonicals}/>
 
     <section slot="main-content" class="section">
         <div class="container">

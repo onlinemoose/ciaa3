@@ -3,14 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro'
 import Breadcrumb from '../../components/Breadcrumb.astro';
 
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
-let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+let title = "Qigong Explanation Details Page";
+let description = "An overview of Qigong from the UK's leading Tai Chi instructors. 30 years experience explaining the interal martial art of Qigong";
+let keywords = "qigong, martial art, Berkshire, Berks, Reading, Swallowfield";
+let canonicals = "internal-arts/qigong"
 
 ---
 <Layout>
 
-    <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
+    <Header slot="header-content" title={title} description={description} keywords={keywords} canonicals={canonicals}/>    
 
     <section slot="main-content" class="section">
         <div class="container">

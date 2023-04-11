@@ -3,13 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro'
 import Breadcrumb from '../../components/Breadcrumb.astro';
 
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "CIAA - Internal Martial Arts (neijia) - Xingyiquan";
+let title = "Xingyiquan Explanation Details Page";
+let description = "An overview of Xingyiquan from the UK's leading Tai Chi instructors. 30 years experience explaining the interal martial art of Xingyiquan";
 let keywords = "xingyiquan, xingyi, CIAA, Berkshire, Berks, Reading, Swallowfield";
+let canonicals = "internal-arts/xingyiquan"
 ---
 <Layout>
 
-    <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
+    <Header slot="header-content" title={title} description={description} keywords={keywords} canonicals={canonicals} />
 
     <section slot="main-content" class="section">
         <div class="container">
