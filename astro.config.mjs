@@ -1,19 +1,6 @@
-import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel/serverless';
+import { defineConfig } from 'astro/config'
 
-export default defineConfig(
-    /** @type {import('astro').AstroUserConfig} */
-    {
-      vite:{
-        ssr:{
-          noExternal: ['@fontsource/*']
-        }
-      }
-    },
-    {
-      site: 'https://www.taichiforeverybody.com/'
-    }, 
-    {
-      output: 'server',
-      adapter: vercel(),
-    });
+export default defineConfig({
+  // your configuration options here...
+  // https://docs.astro.build/en/reference/configuration-reference/
+})
