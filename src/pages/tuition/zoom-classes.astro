@@ -30,9 +30,9 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
 const json = await response.json();
 const zoomPageContent = json.data.zoomClass;
 
-let title = "Chinese Internal Arts Association of Great Britain";
-let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
-let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
+let title = "Tai Chi Classes at home via Zoom";
+let description = "Learn Tai Chi from home via Zoom with the Founders of the CIAA - Internal Martial Arts. We teach Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "learn, study, how, to, taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, CIAA";
 ---
 
 <Layout>
@@ -41,8 +41,8 @@ let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xin
     <section slot="main-content" class="section">
         <div class="container">
             <Breadcrumb />
-            <h2 class="title">{zoomPageContent.title}</h2>
-            <h4 class="title">{zoomPageContent.zoomPageSubText}</h4>
+            <h1 class="title">{zoomPageContent.title}</h1>
+            <h2 class="title">{zoomPageContent.zoomPageSubText}</h2>
             <div class="content box has-text-info has-background-light" set:html={zoomPageContent.videoConfSetup.html} />
             <br/>
             <div class="content" set:html={zoomPageContent.lessonsListing.html} />

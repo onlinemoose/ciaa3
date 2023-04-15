@@ -6,7 +6,7 @@ a, p, .subtitle {
   font-family: "Inter", sans-serif; }
 
 blockquote {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500; }
 
 p {
@@ -1234,9 +1234,9 @@ a.box:active {
   .button.is-normal {
     font-size: 1rem; }
   .button.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .button.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .button[disabled],
   fieldset[disabled] .button {
     background-color: white;
@@ -1283,9 +1283,9 @@ a.box:active {
     .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large):not(.is-rounded) {
       border-radius: 2px; }
   .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large) {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .buttons.has-addons .button:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
@@ -1335,7 +1335,7 @@ a.box:active {
   .button.is-responsive.is-medium {
     font-size: 1rem; }
   .button.is-responsive.is-large {
-    font-size: 1.5rem; } }
+    font-size: 1.3rem; } }
 
 .container {
   flex-grow: 1;
@@ -1494,10 +1494,10 @@ a.box:active {
   font-size: 1rem; }
 
 .content.is-medium {
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
 
 .content.is-large {
-  font-size: 1.9rem; }
+  font-size: 1.5rem; }
 
 .icon {
   align-items: center;
@@ -1805,9 +1805,9 @@ div.icon-text {
   .progress.is-small {
     height: 0.75rem; }
   .progress.is-medium {
-    height: 1.5rem; }
+    height: 1.3rem; }
   .progress.is-large {
-    height: 1.9rem; }
+    height: 1.5rem; }
 
 @keyframes moveIndeterminate {
   from {
@@ -1963,7 +1963,7 @@ div.icon-text {
   .tags.are-medium .tag:not(.is-normal):not(.is-large) {
     font-size: 1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium) {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .tags.is-centered {
     justify-content: center; }
     .tags.is-centered .tag {
@@ -2054,7 +2054,7 @@ div.icon-text {
   .tag:not(body).is-medium {
     font-size: 1rem; }
   .tag:not(body).is-large {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
     margin-right: 0.1875em; }
@@ -2114,7 +2114,7 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
   line-height: 1.125; }
   .title strong {
@@ -2123,15 +2123,15 @@ a.tag:hover {
   .title:not(.is-spaced) + .subtitle {
     margin-top: -1.25rem; }
   .title.is-1, h1.title {
-    font-size: 4rem; }
-  .title.is-2, h2.title {
-    font-size: 3rem; }
-  .title.is-3, h3.title {
     font-size: 2.5rem; }
-  .title.is-4, h4.title {
+  .title.is-2, h2.title {
+    font-size: 2rem; }
+  .title.is-3, h3.title {
     font-size: 1.9rem; }
-  .title.is-5, h5.title {
+  .title.is-4, h4.title {
     font-size: 1.5rem; }
+  .title.is-5, h5.title {
+    font-size: 1.3rem; }
   .title.is-6, h6.title {
     font-size: 1rem; }
   .title.is-7 {
@@ -2139,7 +2139,7 @@ a.tag:hover {
 
 .subtitle {
   color: #757763;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.35; }
   .subtitle strong {
@@ -2148,15 +2148,15 @@ a.tag:hover {
   .subtitle:not(.is-spaced) + .title {
     margin-top: -1.25rem; }
   .subtitle.is-1, h1.subtitle {
-    font-size: 4rem; }
-  .subtitle.is-2, h2.subtitle {
-    font-size: 3rem; }
-  .subtitle.is-3, h3.subtitle {
     font-size: 2.5rem; }
-  .subtitle.is-4, h4.subtitle {
+  .subtitle.is-2, h2.subtitle {
+    font-size: 2rem; }
+  .subtitle.is-3, h3.subtitle {
     font-size: 1.9rem; }
-  .subtitle.is-5, h5.subtitle {
+  .subtitle.is-4, h4.subtitle {
     font-size: 1.5rem; }
+  .subtitle.is-5, h5.subtitle {
+    font-size: 1.3rem; }
   .subtitle.is-6, h6.subtitle {
     font-size: 1rem; }
   .subtitle.is-7 {
@@ -2174,7 +2174,7 @@ a.tag:hover {
   background-color: whitesmoke;
   border-radius: 9999px;
   display: inline-flex;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   height: 2em;
   justify-content: center;
   margin-right: 1.5rem;
@@ -2286,9 +2286,9 @@ a.tag:hover {
     border-radius: 2px;
     font-size: 0.75rem; }
   .is-medium.input, .is-medium.textarea {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .is-large.input, .is-large.textarea {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .is-fullwidth.input, .is-fullwidth.textarea {
     display: block;
     width: 100%; }
@@ -2460,9 +2460,9 @@ a.tag:hover {
     border-radius: 2px;
     font-size: 0.75rem; }
   .select.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .select.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a !important;
     opacity: 0.5; }
@@ -2479,9 +2479,9 @@ a.tag:hover {
   .select.is-loading.is-small:after {
     font-size: 0.75rem; }
   .select.is-loading.is-medium:after {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .select.is-loading.is-large:after {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
 
 .file {
   align-items: stretch;
@@ -2653,11 +2653,11 @@ a.tag:hover {
   .file.is-normal {
     font-size: 1rem; }
   .file.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
   .file.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
     .file.is-large .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
@@ -2780,9 +2780,9 @@ a.tag:hover {
   .label.is-small {
     font-size: 0.75rem; }
   .label.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .label.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
 
 .help {
   display: block;
@@ -2916,10 +2916,10 @@ a.tag:hover {
     .field-label.is-normal {
       padding-top: 0.375em; }
     .field-label.is-medium {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       padding-top: 0.375em; }
     .field-label.is-large {
-      font-size: 1.9rem;
+      font-size: 1.5rem;
       padding-top: 0.375em; } }
 
 .field-body .field .field {
@@ -2957,11 +2957,11 @@ a.tag:hover {
   .control.has-icons-left .input.is-medium ~ .icon,
   .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .control.has-icons-left .input.is-large ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
     height: 2.5em;
@@ -2988,9 +2988,9 @@ a.tag:hover {
   .control.is-loading.is-small:after {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .control.is-loading.is-large:after {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
 
 /* Bulma Components */
 .breadcrumb {
@@ -3035,9 +3035,9 @@ a.tag:hover {
   .breadcrumb.is-small {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .breadcrumb.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
   .breadcrumb.has-bullet-separator li + li::before {
@@ -3313,9 +3313,9 @@ button.dropdown-item {
   .menu.is-small {
     font-size: 0.75rem; }
   .menu.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .menu.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
 
 .menu-list {
   line-height: 1.25; }
@@ -3357,9 +3357,9 @@ button.dropdown-item {
   .message.is-small {
     font-size: 0.75rem; }
   .message.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .message.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .message.is-white {
     background-color: white; }
     .message.is-white .message-header {
@@ -3532,7 +3532,7 @@ button.dropdown-item {
   color: #363636;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   line-height: 1; }
 
 .modal-card-foot {
@@ -4350,9 +4350,9 @@ a.navbar-item,
   .pagination.is-small {
     font-size: 0.75rem; }
   .pagination.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .pagination.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
   .pagination.is-rounded .pagination-previous,
   .pagination.is-rounded .pagination-next {
     padding-left: 1em;
@@ -4731,9 +4731,9 @@ label.panel-block {
   .tabs.is-small {
     font-size: 0.75rem; }
   .tabs.is-medium {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .tabs.is-large {
-    font-size: 1.9rem; }
+    font-size: 1.5rem; }
 
 /* Bulma Grid */
 .column {
@@ -6402,19 +6402,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding-bottom: auto !important; }
 
 .is-size-1 {
-  font-size: 4rem !important; }
-
-.is-size-2 {
-  font-size: 3rem !important; }
-
-.is-size-3 {
   font-size: 2.5rem !important; }
 
-.is-size-4 {
+.is-size-2 {
+  font-size: 2rem !important; }
+
+.is-size-3 {
   font-size: 1.9rem !important; }
 
-.is-size-5 {
+.is-size-4 {
   font-size: 1.5rem !important; }
+
+.is-size-5 {
+  font-size: 1.3rem !important; }
 
 .is-size-6 {
   font-size: 1rem !important; }
@@ -6424,15 +6424,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 4rem !important; }
-  .is-size-2-mobile {
-    font-size: 3rem !important; }
-  .is-size-3-mobile {
     font-size: 2.5rem !important; }
-  .is-size-4-mobile {
+  .is-size-2-mobile {
+    font-size: 2rem !important; }
+  .is-size-3-mobile {
     font-size: 1.9rem !important; }
-  .is-size-5-mobile {
+  .is-size-4-mobile {
     font-size: 1.5rem !important; }
+  .is-size-5-mobile {
+    font-size: 1.3rem !important; }
   .is-size-6-mobile {
     font-size: 1rem !important; }
   .is-size-7-mobile {
@@ -6440,15 +6440,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 4rem !important; }
-  .is-size-2-tablet {
-    font-size: 3rem !important; }
-  .is-size-3-tablet {
     font-size: 2.5rem !important; }
-  .is-size-4-tablet {
+  .is-size-2-tablet {
+    font-size: 2rem !important; }
+  .is-size-3-tablet {
     font-size: 1.9rem !important; }
-  .is-size-5-tablet {
+  .is-size-4-tablet {
     font-size: 1.5rem !important; }
+  .is-size-5-tablet {
+    font-size: 1.3rem !important; }
   .is-size-6-tablet {
     font-size: 1rem !important; }
   .is-size-7-tablet {
@@ -6456,15 +6456,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 4rem !important; }
-  .is-size-2-touch {
-    font-size: 3rem !important; }
-  .is-size-3-touch {
     font-size: 2.5rem !important; }
-  .is-size-4-touch {
+  .is-size-2-touch {
+    font-size: 2rem !important; }
+  .is-size-3-touch {
     font-size: 1.9rem !important; }
-  .is-size-5-touch {
+  .is-size-4-touch {
     font-size: 1.5rem !important; }
+  .is-size-5-touch {
+    font-size: 1.3rem !important; }
   .is-size-6-touch {
     font-size: 1rem !important; }
   .is-size-7-touch {
@@ -6472,15 +6472,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 4rem !important; }
-  .is-size-2-desktop {
-    font-size: 3rem !important; }
-  .is-size-3-desktop {
     font-size: 2.5rem !important; }
-  .is-size-4-desktop {
+  .is-size-2-desktop {
+    font-size: 2rem !important; }
+  .is-size-3-desktop {
     font-size: 1.9rem !important; }
-  .is-size-5-desktop {
+  .is-size-4-desktop {
     font-size: 1.5rem !important; }
+  .is-size-5-desktop {
+    font-size: 1.3rem !important; }
   .is-size-6-desktop {
     font-size: 1rem !important; }
   .is-size-7-desktop {
