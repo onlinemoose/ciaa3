@@ -16,6 +16,9 @@ export async function getStaticPaths() {
               posts {
                   id
                   title
+                  metaTitle
+                  metaDescription
+                  metaKeywords
                   content {
                     html
                   }
@@ -47,14 +50,15 @@ console.log(id);
 
 const cleanContent = parse(post.content.html);
 
+/*
 let title = "Chinese Internal Arts Association of Great Britain";
 let description = "CIAA - Internal Martial Arts (neijia) - Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
 let keywords = "taijiquan, taiji, tai chi, taichi, yiquan,baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, zhan zhuang, tui shou, CIAA, Berkshire, Berks, Reading, Swallowfield";
-
+*/
 ---
 <Layout>
 
-  <Header slot="header-content" title={title} description={description} keywords={keywords}/>
+  <Header slot="header-content" title={post.metaTitle} description={post.metaDescription} keywords={post.metaKeywords}/>
 
   <div slot="main-content" class="section">
     <div class="container">
