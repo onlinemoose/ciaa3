@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro'
+import Breadcrumb from '../../components/Breadcrumb.astro';
+
+let title = "Tai Chi retreat in Morocco, beginners to advanced";
+let description = "Residential Tai Chi and Internal Martial Arts Retreat in Morocco over Christmas 2023-2024. Tuition covers Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
+let keywords = "holiday, week, retreat, learn, taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, international, Taroudant, Morocco";
+---
+
+<Layout>
+
+    <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
+    <section slot="main-content" class="section">
+        <div class="container">
+            <Breadcrumb />
+                <div class="content">
+                <h1 class="title">Tai Chi Holiday Retreat in Morocco</h1>
+                <h2 class="title">Winter Sun: Riad El Aissi, Taroudant, Morocco</h2>
+                <p class="subtitle"><b>When</b>: Wednesday, 6th Dec 2023 to Thurs, 4th Jan 2024. Come for a week or more.</p>
+
+                <p>We return to Riad El Aissi for the first time in 4 years. A perfect place to relax and practice Tai Chi, 
+                    Yiquan, Baguazhang, Xingyiquan, Qigong and Chi kung.</p>
+                    <p><a href="/contact">Contact us</a> for more information.</p>
+                    <figure class="image is-4by2">
+                        <img src="/images/Riad El Aissi Morocco Tai Chi Retreat.jpg" alt="Riad El Aissi hotel in Morocco">
+                    </figure>
+                    <p>
+                        <b>Tuition</b>: We will teach Chen Taijiquan (Tai Chi), Yiquan & Qigong Retreat. Please also <a href="/contact">contact us</a> to discuss other <a href="/internal-arts">internal arts</a> you are interested in learning with us, we may be able to include it in the schedule.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+</Layout>

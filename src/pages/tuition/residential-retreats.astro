@@ -29,20 +29,43 @@ const response = await fetch("https://api-eu-west-2.hygraph.com/v2/cl69huq4hdrg6
 const json = await response.json();
 const retreatContent = json.data.retreat;
 
-let title = "Tai Chi retreats in the UK and Morocco, beginners to advanced";
+let title = "Tai Chi weekend retreats in the UK, beginners to advanced";
 let description = "Residential Tai Chi and Internal Martial Arts Retreats covering Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
-let keywords = "retreat, weekend, learn, taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, Berkshire, Berks, Reading, Swallowfield";
+let keywords = "retreat, weekend, learn, taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, UK, united kingdom, high leigh, hoddeston, boars hill, oxford";
 ---
-
+<style>
+    .card { 
+      width: 240px;
+      margin: 20px;
+    }
+  </style>
 <Layout>
 
     <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
     <section slot="main-content" class="section">
         <div class="container">
             <Breadcrumb />
-            <h1 class="title">{retreatContent.title}</h1>
-            <h2 class="title">{retreatContent.subTitle}</h2>
-            <p>{retreatContent.descriptionParagraph}</p>
+                    <div class="card is-pulled-right">
+                        <div class="card-image">
+                            <figure class="image is-4by2">
+                                <img src="/images/Riad El Aissi Morocco Tai Chi Retreat.jpg" alt="Riad El Aissi hotel in Morocco">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3>Morocco Holiday Retreat</h3>
+                                <p>We are back at Riad El Aissi for Christmas 2023-24.</p>
+                            </div>
+                            <button class="button is-fullwidth">
+                                <a class="" href="/tuition/international-retreats">Discover More</a>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <h1 class="title">{retreatContent.title}</h1>
+                    <h2 class="title">{retreatContent.subTitle}</h2>
+                    <p>{retreatContent.descriptionParagraph}</p>
+                
             <br/>
             <div class="content" set:html={retreatContent.retreatsInfo.html} />
         </div>
