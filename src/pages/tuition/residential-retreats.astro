@@ -33,41 +33,53 @@ let title = "Tai Chi weekend retreats in the UK, beginners to advanced";
 let description = "Residential Tai Chi and Internal Martial Arts Retreats covering Taijiquan, Yiquan, Baguazhang, Xingyiquan & Qigong";
 let keywords = "retreat, weekend, learn, taijiquan, taiji, tai chi, taichi, yiquan, baguazhang, bagua, xingyiquan, xingyi, qigong, chi kung, martial art, self defense, UK, united kingdom, high leigh, hoddeston, boars hill, oxford";
 ---
+<!--
 <style>
     .card { 
       width: 240px;
       margin: 20px;
+      float: right;
     }
+
   </style>
+   -->
 <Layout>
 
     <Header slot="header-content" title={title} description={description} keywords={keywords}/>    
     <section slot="main-content" class="section">
         <div class="container">
             <Breadcrumb />
-                    <div class="card is-pulled-right">
-                        <div class="card-image">
-                            <figure class="image is-4by2">
-                                <img src="/images/Riad El Aissi Morocco Tai Chi Retreat.jpg" alt="Riad El Aissi hotel in Morocco">
-                            </figure>
+
+                <div class="columns">
+                        <div class="column is-two-thirds-tablet is-three-quarters-desktop">
+                            <h1 class="title">{retreatContent.title}</h1>
+                            <h2 class="title">{retreatContent.subTitle}</h2>
+                            <p>{retreatContent.descriptionParagraph}</p>
+                            <div class="content" set:html={retreatContent.retreatsInfo.html} />
                         </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h3>Morocco Holiday Retreat</h3>
-                                <p>We are back at Riad El Aissi for Christmas 2023-24.</p>
+                        <div class="column">
+                            <div class="block">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-4by2">
+                                            <img src="/images/Riad El Aissi Morocco Tai Chi Retreat.jpg" alt="Riad El Aissi hotel in Morocco">
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="content">
+                                            <h3>Morocco Holiday Retreat</h3>
+                                            <p>We are back at Riad El Aissi for Christmas 2023-24.</p>
+                                        </div>
+                                        <button class="button is-fullwidth">
+                                            <a class="" href="/tuition/international-retreats">Discover More</a>
+                                        </button>
+                                        
+                                    </div>
+                                </div>
                             </div>
-                            <button class="button is-fullwidth">
-                                <a class="" href="/tuition/international-retreats">Discover More</a>
-                            </button>
-                            
                         </div>
-                    </div>
-                    <h1 class="title">{retreatContent.title}</h1>
-                    <h2 class="title">{retreatContent.subTitle}</h2>
-                    <p>{retreatContent.descriptionParagraph}</p>
+                </div>
                 
-            <br/>
-            <div class="content" set:html={retreatContent.retreatsInfo.html} />
         </div>
     </section>
 
